@@ -13,7 +13,8 @@ const createImgNode = ()=>{
     const image = document.createElement("img");
     image.className = "mx-auto";
     image.width = "320"
-    image.src = `https://randomfox.ca/images/${random()}.jpg`
+    //dataset help us to catch the data not to show it
+    image.dataset.src = `https://randomfox.ca/images/${random()}.jpg`
 
     container.appendChild (image);
 
